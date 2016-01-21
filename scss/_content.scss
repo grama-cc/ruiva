@@ -1,0 +1,74 @@
+#content {
+  align-items: flex-end;
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 100%;
+
+  @media (max-width: $break-width) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #left-banner {
+    height: calc-responsive(626, 626);
+    position: relative;
+    width: calc-responsive(332, 332);
+
+    @media (max-width: $break-width) {
+      margin-bottom: 36px;
+    }
+
+    #logo {
+      height: 100%;
+      width: 100%;
+    }
+
+    #caption {
+      color: $blue;
+      font-size: 26px;
+      position: absolute;
+      right: 20px;
+      top: 190px;
+    }
+  }
+
+  .list-box {
+
+    li {
+      background-image:
+        url($img-path + 'box-contact-bg2.svg'),
+        url($img-path + 'box-contact-bg.jpg');
+      background-position: center center;
+      background-size: cover;
+      box-sizing: border-box;
+      height: 400px;
+      padding: 30px 34px;
+      width: 350px;
+
+      &.contact {
+        font-size: 42px;
+        letter-spacing: 3px;
+        line-height: 52px;
+
+        a {
+          color: $yellow;
+        }
+
+        &:hover {
+          background: url($img-path + 'box-contact-bg2.svg') $yellow;
+
+          a {
+            color: $blue;
+          }
+        }
+      }
+
+      .email {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
