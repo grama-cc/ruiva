@@ -1,0 +1,138 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:after, blockquote:before, q:after, q:before {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url("../../fonts/ubuntumono-regular.ttf");
+  src: url("../../fonts/ubuntumono-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url("../../fonts/ubuntumono-bold.ttf");
+  src: url("../../fonts/ubuntumono-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url("../../fonts/ubuntumono-italic.ttf");
+  src: url("../../fonts/ubuntumono-italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url("../../fonts/ubuntumono-bolditalic.ttf");
+  src: url("../../fonts/ubuntumono-bolditalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
+#main {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  box-sizing: border-size;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+  width: 100%; }
+  #main a {
+    color: #0000ff;
+    text-decoration: none; }
+
+#content {
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  max-width: 1280px;
+  width: 100%; }
+  @media (max-width: 1200px) {
+    #content {
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+                  -ms-grid-row-align: center;
+              align-items: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  #content #left-banner {
+    height: calc(0vw + 626px);
+    position: relative;
+    width: calc(0vw + 332px); }
+    @media (max-width: 1200px) {
+      #content #left-banner {
+        margin-bottom: 36px; } }
+    #content #left-banner #logo {
+      height: 100%;
+      width: 100%; }
+    #content #left-banner #caption {
+      color: #0000ff;
+      font-size: 26px;
+      font-family: "Ubuntu Mono";
+      position: absolute;
+      right: 56px;
+      top: 180px; }
+  #content .list-box li {
+    background-image: url("../../img/box-contact-bg2.svg"), url("../../img/box-contact-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    box-sizing: border-box;
+    height: 400px;
+    padding: 34px 36px;
+    width: 350px; }
+    #content .list-box li.contact {
+      font-family: "Ubuntu Mono";
+      font-size: 50px;
+      letter-spacing: 2px;
+      line-height: 52px; }
+      #content .list-box li.contact a {
+        color: #ffd400; }
+      #content .list-box li.contact:hover {
+        background: url("../../img/box-contact-bg2.svg") #ffd400; }
+        #content .list-box li.contact:hover a {
+          color: #0000ff; }
+    #content .list-box li .email {
+      margin-bottom: 40px; }
+
+/*# sourceMappingURL=style.css.map */
