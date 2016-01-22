@@ -29,9 +29,10 @@
     #caption {
       color: $blue;
       font-size: 26px;
+      font-family: "Ubuntu Mono";
       position: absolute;
-      right: 20px;
-      top: 190px;
+      right: 56px;
+      top: 180px;
     }
   }
 
@@ -45,12 +46,13 @@
       background-size: cover;
       box-sizing: border-box;
       height: 400px;
-      padding: 30px 34px;
+      padding: 34px 36px;
       width: 350px;
 
       &.contact {
-        font-size: 42px;
-        letter-spacing: 3px;
+        font-family: "Ubuntu Mono";
+        font-size: 50px;
+        letter-spacing: 2px;
         line-height: 52px;
 
         a {

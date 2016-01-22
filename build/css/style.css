@@ -25,6 +25,34 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url("../../fonts/ubuntumono-regular.ttf");
+  src: url("../../fonts/ubuntumono-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url("../../fonts/ubuntumono-bold.ttf");
+  src: url("../../fonts/ubuntumono-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url("../../fonts/ubuntumono-italic.ttf");
+  src: url("../../fonts/ubuntumono-italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: "Ubuntu Mono";
+  src: url("../../fonts/ubuntumono-bolditalic.ttf");
+  src: url("../../fonts/ubuntumono-bolditalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+
 #main {
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -33,7 +61,6 @@ table {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  font-family: sans-serif;
   min-height: 100vh;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -42,7 +69,6 @@ table {
   width: 100%; }
   #main a {
     color: #0000ff;
-    font-family: sans-serif;
     text-decoration: none; }
 
 #content {
@@ -53,9 +79,9 @@ table {
   display: -ms-flexbox;
   display: flex;
   height: auto;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   max-width: 1280px;
   width: 100%; }
   @media (max-width: 1200px) {
@@ -83,20 +109,22 @@ table {
     #content #left-banner #caption {
       color: #0000ff;
       font-size: 26px;
+      font-family: "Ubuntu Mono";
       position: absolute;
-      right: 20px;
-      top: 190px; }
+      right: 56px;
+      top: 180px; }
   #content .list-box li {
     background-image: url("../../img/box-contact-bg2.svg"), url("../../img/box-contact-bg.jpg");
     background-position: center center;
     background-size: cover;
     box-sizing: border-box;
     height: 400px;
-    padding: 30px 34px;
+    padding: 34px 36px;
     width: 350px; }
     #content .list-box li.contact {
-      font-size: 42px;
-      letter-spacing: 3px;
+      font-family: "Ubuntu Mono";
+      font-size: 50px;
+      letter-spacing: 2px;
       line-height: 52px; }
       #content .list-box li.contact a {
         color: #ffd400; }
