@@ -5,9 +5,23 @@
   min-height: 100vh;
   justify-content: center;
   width: 100%;
+  animation: fade-in 1s;
 
   a {
     color: $blue;
     text-decoration: none;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
   }
 }
