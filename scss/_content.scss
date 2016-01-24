@@ -5,21 +5,12 @@
   justify-content: space-around;
   max-width: 1280px;
   width: 100%;
-
-  @media (max-width: $break-width) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  flex-wrap: wrap;
 
   #left-banner {
-    height: calc-responsive(626, 626);
     position: relative;
-    width: calc-responsive(332, 332);
-
-    @media (max-width: $break-width) {
-      margin-bottom: 36px;
-    }
+    width: calc-responsive(200, 332);
+    padding: calc-responsive(20, 40);
 
     #logo {
       height: 100%;
@@ -28,15 +19,16 @@
 
     #caption {
       color: $blue;
-      font-size: 26px;
+      font-size: calc-responsive(18, 26);
       font-family: "Ubuntu Mono";
       position: absolute;
-      right: 56px;
-      top: 180px;
+      left: 50%;
+      bottom: 62%;
     }
   }
 
   .list-box {
+    padding: calc-responsive(20, 40);
 
     li {
       background-image:
@@ -45,22 +37,23 @@
       background-position: center center;
       background-size: cover;
       box-sizing: border-box;
-      height: 400px;
+      height: calc-responsive(400 * 300 / 350, 400);
       padding: 34px 36px;
-      width: 350px;
+      width: calc-responsive(300, 350);
 
       &.contact {
         font-family: "Ubuntu Mono";
-        font-size: 50px;
+        font-size: calc-responsive(40, 50);
         letter-spacing: 2px;
-        line-height: 52px;
+        line-height: 1;
 
         a {
           color: $yellow;
         }
 
         &:hover {
-          background: url($img-path + 'box-contact-bg2.svg') $yellow;
+          background-image: url($img-path + 'box-contact-bg2.svg');
+          background-color: $yellow;
 
           a {
             color: $blue;
